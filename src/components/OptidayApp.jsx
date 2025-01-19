@@ -6,14 +6,20 @@ import Feedback from "./Feedback"
 import Main from "./Main"
 import Todo from "./todo/Todo"
 import Login from "../page/Login"
+
 import Mypage from "./Mypage"
 import MainPage from "../page/MainPage"
+import FollowLayout from "./bars/FollowLayout"
+import FollowersPage from "../page/FollowersPage"
+import FollowingPage from "../page/FollowingPage"
+import SearchAccountsPage from "../page/SearchAccountsPage"
+import Signup from "../page/Signup"
 
 
 function OptidayApp(){
   const location = useLocation();
 
-  const isLoginPage = location.pathname === "/login"; //로그인 페이지일때 bar렌더링안함.
+  const isLoginPage = location.pathname === "/login" || location.pathname === "/signup";
   
   return(
     <div className="OptidayApp">
@@ -27,9 +33,16 @@ function OptidayApp(){
           <Route path='/feedback' element={<Feedback/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/mainpage' element={<MainPage/>}/>
+          <Route path="/follow" element={<FollowLayout />}>
+            <Route path="followers" element={<FollowersPage />} />
+            <Route path="following" element={<FollowingPage />} />
+            <Route path="search-accounts" element={<SearchAccountsPage />} />
+          </Route>
+          <Route path='/signup' element={<Signup/>}/>
         </Routes>
         </div>
     </div>
   )
 }
-export default OptidayApp
+
+export default OptidayApp;
