@@ -1,0 +1,137 @@
+.followers-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width of the viewport */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .followers-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar {
+    width: 80%; /* Wider search bar */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .followers-list {
+    width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between items */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .followers-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Full width of the container */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    flex-grow: 1; /* Take up remaining space */
+  }
+  
+  .profile-info .name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .profile-info .tag {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .follow-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .follow-button.following {
+    background-color: #6c757d;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button.active {
+    background-color: #28a745;
+    color: white;
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-button.active {
+    background: #007BFF;
+    color: white;
+  }
+  
+  .nav-button:hover {
+    background: #0056b3;
+    color: white;
+  }
+  

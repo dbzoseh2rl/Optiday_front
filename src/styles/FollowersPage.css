@@ -1,0 +1,111 @@
+/* 공통 컨테이너 스타일 */
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* 헤더 스타일 */
+.page-header h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.page-header .search-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.page-header .search-input:focus {
+  border-color: #007bff;
+}
+
+/* 팔로우 리스트 스타일 */
+.follow-list ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.follow-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.profile-info {
+  font-size: 16px;
+}
+
+/* 버튼 스타일 */
+.action-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #f0f0f0;
+  border: none;
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.pagination button.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination span {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #888;
+}
