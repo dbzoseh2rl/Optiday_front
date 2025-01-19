@@ -2,10 +2,10 @@
     display: flex;
 }
 .contents{
-    background-color: rgb(219, 219, 219);
     width: 100%;
     padding: 10px;
-    margin-left: 60px;
+    margin-left: 70px;
+    margin-top: 75px;
 }
 .sidebar{
     position: fixed; /* 사이드바 고정 */

@@ -3,8 +3,9 @@ import { NavLink, Outlet } from "react-router-dom";
 import "../../styles/FollowLayout.css"; // FollowLayout.jsx에서
 
 function FollowLayout() {
+
   return (
-    <div className="follow-layout">
+    <div className="follow-layout contents">
       <nav className="follow-tabs">
         <NavLink
           to="/follow/followers"
