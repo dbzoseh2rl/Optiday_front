@@ -1,0 +1,41 @@
+.search-accounts-page {
+    padding: 20px;
+  }
+  
+  .search-accounts-page h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .accounts-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+  
+  .account-name {
+    font-weight: bold;
+  }
+  
+  .account-tag {
+    color: #666;
+  }
+  
