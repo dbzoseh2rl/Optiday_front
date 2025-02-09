@@ -1,0 +1,86 @@
+.feedback {
+    margin-left: 60px; /* 사이드바 너비만큼 이동 */
+    width: calc(100% - 60px); /* 화면에서 사이드바를 제외한 영역 */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .date-picker-container {
+    display: flex;
+    justify-content: flex-end; /* 달력 필드를 오른쪽 끝으로 이동 */
+    align-items: center; /* 수직 가운데 정렬 */
+    margin-bottom: 20px;
+  }
+  
+  .date-inputs {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-inputs input[type="date"] {
+    padding: 8px 10px; /* 입력 필드 여백 */
+    font-size: 1rem; /* 글씨 크기 조정 */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .date-inputs span {
+    margin: 0 10px; /* "-" 사이 간격 */
+  }
+  
+  .date-inputs button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin-left: 10px;
+  }
+  
+  .achievement-item {
+    margin: 15px 0; /* 바 간격 더 추가 */
+    font-size: 1.2rem; /* 글씨 크기 조정 */
+  }
+  
+  .progress-bar-container {
+    width: 100%;
+    background-color: #ddd; /* 바 배경색 */
+    height: 15px; /* 바 두께 */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 15px; /* 바 두께 */
+    border-radius: 8px;
+    transition: width 0.3s ease; /* 진행률 변경 시 애니메이션 */
+  }
+  
+  .contribution-graph-container {
+    margin-top: 20px;
+  }
+  
+  .contribution-graph {
+    display: flex;
+    flex-direction: column; /* 열 간격 */
+    gap: 5px; /* 각 행 사이 간격 */
+  }
+  
+  .week-column {
+    display: flex;
+    flex-direction: row;
+    gap: 5px; /* 각 열 사이 간격 */
+  }
+  
+  .contribution-box {
+    width: 20px; /* 박스 크기 */
+    height: 20px;
+    border-radius: 3px; /* 모서리 둥글게 */
+    background-color: rgba(220, 220, 220, 1); /* 기본 배경색: 빈 공간 */
+    transition: background-color 0.3s ease; /* 색상 변화 애니메이션 */
+  }
+  
+  .contribution-box:hover {
+    border: 1px solid #000; /* 박스 hover 시 강조 */
+    background-color: rgba(0, 200, 0, 0.8); /* hover 시 색상 */
+  }
+  

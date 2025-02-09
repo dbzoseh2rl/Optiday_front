@@ -39,6 +39,7 @@ function OptidayApp(){
             <Route path="search-accounts" element={<SearchAccountsPage />} />
           </Route>
           <Route path='/signup' element={<Signup/>}/>
+          <Route path='/feedback' element={<Feedback/>}/>
         </Routes>
         </div>
     </div>
