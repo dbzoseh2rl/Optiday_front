@@ -1,0 +1,217 @@
+.calendar-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+.calendar-layout {
+    display: flex;
+    gap: 20px;
+    padding: 100px 20px 20px 40px;
+    height: calc(100vh - 100px); /* Fixed height */
+    width: 100%;
+    margin-left: 20px;
+    /* overflow: hidden; 
+    overflow-y: auto; /* 세로 스크롤만 허용할 경우 */
+}
+
+.calendar-left-panel {
+    flex: 0 0 320px; /* Fixed width of 320px */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.main-calendar-area {
+    flex: 1;
+    max-width: 1400px;
+    min-width: 800px;
+    background: white;
+    padding: 100px 20px 20px; /* 상단 패딩을 40px로 증가 */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow: auto;
+}
+
+.main-calendar-area .fc {
+    height: 100%;
+    width: 100%;
+    color: #000;
+}
+
+/* Remove underlines and set color for all calendar links */
+.main-calendar-area .fc a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Style header cells (days of week) */
+.main-calendar-area .fc-col-header-cell {
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Style Sunday column */
+.main-calendar-area .fc-day-sun,
+.main-calendar-area .fc-day-sun a,
+.main-calendar-area .fc-col-header-cell.fc-day-sun {
+    color: #FF0000 !important;
+}
+
+/* Style Saturday column */
+.main-calendar-area .fc-day-sat,
+.main-calendar-area .fc-day-sat a,
+.main-calendar-area .fc-col-header-cell.fc-day-sat {
+    color: #0000FF !important;
+}
+
+/* Calendar container */
+.main-calendar-area .fc-view-harness {
+    height: calc(100% - 50px) !important; /* Fixed height, accounting for header */
+}
+
+.fc {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.fc-daygrid-event {
+    background-color: #007bff;
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+}
+
+.fc-daygrid-event .fc-event-title {
+    color: white !important;
+}
+
+.main-calendar-area .fc-daygrid-day {
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
+}
+
+.main-calendar-area .fc-daygrid-day:hover {
+    transform: scale(1.15); /* Increased scale for a more pronounced effect */
+    z-index: 1; /* Ensure it appears above other elements */
+    background: rgba(255, 255, 255, 0.9); /* Optional: add a slight background change */
+    box-shadow: 0 0 5px 2px rgba(240, 240, 240, 1); /* Gray outline effect */
+}
+
+/* Make the calendar header more compact */
+.fc-header-toolbar {
+    margin-bottom: 1em !important;
+    padding: 0 1em;
+}
+
+/* Today cell styling */
+.fc-day-today {
+    background-color: #f8f9fa !important;
+}
+
+/* Style for week and day views */
+.main-calendar-area .fc-timegrid {
+    height: 100%;
+    background: white;
+}
+
+/* Time column styling */
+.main-calendar-area .fc-timegrid-axis {
+    width: 80px !important;
+    border-right: 1px solid #eee;
+    color: #666;
+    font-size: 0.9em;
+    text-align: right;
+    padding-right: 15px !important;
+}
+
+/* Event column styling */
+.main-calendar-area .fc-timegrid-col {
+    background: white;
+    border: none !important;
+}
+
+/* Time slots styling */
+.main-calendar-area .fc-timegrid-slot {
+    height: 60px !important;
+    border-bottom: 1px solid #eee !important;
+}
+
+/* Event styling in time grid */
+.main-calendar-area .fc-timegrid-event {
+    background-color: #e3f2fd;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 0 5px;
+}
+
+.main-calendar-area .fc-timegrid-event .fc-event-main {
+    padding: 2px 4px;
+    color: #333;
+}
+
+/* Header row styling */
+.main-calendar-area .fc-col-header-cell {
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+/* Remove unnecessary borders */
+.main-calendar-area .fc-timegrid-divider {
+    display: none;
+}
+
+.main-calendar-area .fc-timegrid td {
+    border: none !important;
+}
+
+/* Current time indicator */
+.main-calendar-area .fc-timegrid-now-indicator-line {
+    border-color: #ff4444;
+}
+
+.main-calendar-area .fc-timegrid-now-indicator-arrow {
+    border-color: #ff4444;
+    background: #ff4444;
+}
+
+/* Week view specific styles */
+.main-calendar-area .fc-timeGridWeek-view .fc-timegrid-col {
+    min-width: 150px;  /* Ensure columns have good width in week view */
+}
+
+/* Day view specific styles */
+.main-calendar-area .fc-timeGridDay-view .fc-timegrid-col {
+    width: 100%;  /* Use full width in day view */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main-calendar-area {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .calendar-layout {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .calendar-left-panel {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-calendar-area {
+        min-width: 100%;
+        height: 600px; /* Fixed height for mobile view */
+    }
+}

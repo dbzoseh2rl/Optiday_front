@@ -1,0 +1,109 @@
+.mini-calendar {
+    width: 280px;
+    margin: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General font color */
+.mini-calendar .fc {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.mini-calendar .fc a {
+    color: #000;
+    text-decoration: none;
+}
+
+.mini-calendar .fc-toolbar-title {
+    font-size: 1em;
+}
+
+.mini-calendar .fc-button {
+    padding: 0.2em 0.4em;
+    font-size: 0.8em;
+}
+
+/* Remove grid lines */
+.mini-calendar .fc-theme-standard td,
+.mini-calendar .fc-theme-standard th {
+    border: none !important;
+}
+
+/* Style date numbers */
+.mini-calendar .fc-daygrid-day-number {
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin: 2px;
+    text-align: center;
+    width: 24px;
+    display: inline-block;
+}
+
+/* Center align dates */
+.mini-calendar .fc-daygrid-day-top {
+    justify-content: center;
+    padding: 2px !important;
+}
+
+/* Style Sunday (first column) */
+.mini-calendar .fc-day-sun,
+.mini-calendar .fc-day-sun .fc-daygrid-day-number,
+.mini-calendar .fc-col-header-cell.fc-day-sun {
+    color: #FF0000 !important;
+}
+
+/* Style Saturday (last column) */
+.mini-calendar .fc-day-sat,
+.mini-calendar .fc-day-sat .fc-daygrid-day-number,
+.mini-calendar .fc-col-header-cell.fc-day-sat {
+    color: #0000FF !important;
+}
+
+/* Reduce the height of day cells */
+.mini-calendar .fc-daygrid-day-frame {
+    min-height: 25px !important;
+    height: 25px !important;
+}
+
+/* Hide unnecessary elements */
+.mini-calendar .fc-daygrid-day-events {
+    display: none;
+}
+
+.mini-calendar .fc-daygrid-body {
+    min-height: auto !important;
+}
+
+/* Remove border from the calendar container */
+.mini-calendar .fc-theme-standard {
+    border: none !important;
+}
+
+/* Style header cells */
+.mini-calendar .fc-col-header-cell {
+    padding: 4px 0;
+    font-weight: bold;
+}
+
+/* Hover effect on dates */
+.mini-calendar .fc-day:hover {
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Today styling */
+.mini-calendar .fc-day-today {
+    background-color: transparent !important;
+}
+
+.mini-calendar .fc-day-today .fc-daygrid-day-number {
+    background-color: #e8f4ff;
+    border-radius: 50%;
+}
