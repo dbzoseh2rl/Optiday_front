@@ -1,0 +1,32 @@
+.category-selector {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-selector h3 {
+    margin: 0 0 15px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.category-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.category-item label {
+    color: #444;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 5px;
+    border-left: 3px solid var(--category-color);
+}

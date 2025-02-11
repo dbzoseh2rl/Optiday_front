@@ -14,7 +14,7 @@ import FollowersPage from "../page/FollowersPage"
 import FollowingPage from "../page/FollowingPage"
 import SearchAccountsPage from "../page/SearchAccountsPage"
 import Signup from "../page/Signup"
-
+import MonthCalendar from "../page/MonthCalendar"
 
 function OptidayApp(){
   const location = useLocation();
@@ -40,6 +40,7 @@ function OptidayApp(){
           </Route>
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/feedback' element={<Feedback/>}/>
+          <Route path='/month' element={<MonthCalendar/>}/>
         </Routes>
         </div>
     </div>
